@@ -7,7 +7,6 @@ var engine, world;
 var box1, pig1,pig3;
 var backgroundImg,platform;
 var bird, slingshot;
-var backgroundImg;
 var bg = "sprites/bg.png";
 var score = 0;
 
@@ -101,7 +100,7 @@ function keyPressed(){
 
 async function getBackgroundImg()
 {
- var response= await fetch("http://worldtimeapi.org/api/timezone/Asia/Tokyo");
+ var response= await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
 var responseJSON= await response.json();
 
 console.log(responseJSON);
